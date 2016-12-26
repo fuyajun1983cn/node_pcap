@@ -31,3 +31,4 @@ build
 
 #OSX garbage
 .DS_Store
+*~

@@ -109,5 +109,8 @@ RadioPacket.prototype.decode = function (raw_packet, offset) {
     if(this.emitter) { this.emitter.emit("radio-packet", this); }
     return this;
 };
+RadioPacket.prototype.toString = function () {
+    return "WiFi Packet";
+};
 
 module.exports = RadioPacket;

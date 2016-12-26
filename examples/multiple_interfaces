@@ -13,6 +13,7 @@ process.argv.slice(2).forEach(function(dev) {
   var session = pcap.createSession(dev);
   session.on('packet', function(raw_packet) {
     var packet = pcap.decode.packet(raw_packet);
-    console.log(dev + ": " + pcap.print.packet(packet));
+    console.log(dev + ": " + packet);
+//    console.log(dev + ": " + pcap.print.packet(packet));
   });
 });
